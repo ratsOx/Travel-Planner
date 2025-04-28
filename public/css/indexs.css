@@ -1,0 +1,237 @@
+body {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family: Arial;
+  color: rgb(107, 105, 105);
+ 
+}
+
+/* images */
+.logo_img {
+  width: 50px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  padding: 10px 10px;
+  align-items: center;
+}
+.navbar:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  height: 65px;
+  
+}
+
+/* buttons */
+.register_btn,
+.login_btn,
+.about_btn {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  width: 80px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-family: Arial;
+  margin-right: 5px;
+}
+.button_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-bottom:100px;
+}
+.register_btn {
+  background-color: #83ebc5;
+  color: #ff7878;
+}
+.register_btn:hover {
+  background-color: #ffffff;
+  color: #ff7878;
+  border: 1px solid#ff7878;
+  transition: 0.3s;
+  font-weight:bold;
+  padding-left:6px;
+}
+.login_btn {
+  background-color:#ff7878;
+  color: #83ebc5;
+}
+.login_btn:hover {
+  background-color: #ffffff;
+  color:#83ebc5;
+  border: 1px solid #83ebc5;
+  transition: 0.3s;
+  font-weight:bold;
+}
+
+/* h2.h3, h4 */
+h2 {
+  color: rgb(121, 119, 119);
+  font-size: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+h4 {
+  margin-right: 20px;
+  color: rgb(121, 119, 119);
+}
+
+/* Divs for the body */
+.body,
+.body1 {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  background-color: #072649;
+}
+.body1 {
+  background-color: aquamarine;
+}
+
+/* Carousel */
+.carousel {
+  width: 100%;
+  height: 90vh;
+  margin-top: -40px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .list {
+  position: relative;
+  height: 100%;
+}
+
+.carousel .list .item {
+  transition: all 0.8s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.carousel .item{
+  margin-top:40px;
+  background-size:cover;
+  object-fit: fill;
+  background-attachment: fixed;
+  flex-shrink: 0;
+  width: 29%;
+  height: 20%;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.carousel .list .item.active {
+  opacity: 1;
+  pointer-events: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  transform: translateX(0);
+  z-index: 2;
+}
+
+.carousel .list .item.prev,
+.carousel .list .item.next {
+  opacity: 0;
+}
+
+.carousel .list .item.slide-left {
+  transform: translateX(-100%);
+}
+.carousel .list .item.slide-right {
+  transform: translateX(100%);
+}
+
+/* slider Description */
+.item .content {
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 400px;
+  text-align: left;
+  color: #fff;
+}
+.content .title {
+  font-size: 100px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  width:220px;
+  color: #ff7878;
+  text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+  background-color: #83ebc5;
+  border-radius:20px;
+}
+.content .name, .name2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin-top:50px;
+  margin-bottom: 10px;
+  width:150px;
+  height:200px;
+  color:#83ebc5;
+  text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+  background-color: #ff7878;
+  border-radius:20px;
+}
+.name2{
+  display:flex;
+  flex-direction:row;
+}
+.content .des {
+  width:500px;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #83ebc5;
+  border-radius:20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color:#ff7878;
+  backdrop-filter: blur(0.9px);
+}
+
+/* Arrow buttons */
+.arrows {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.arrows button {
+  background-color: rgba(255, 255, 255, 0.8);   
+  width:60px;
+  height:60px;
+  color: white;
+  border: none;
+  font-size: 24px;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.arrows button:hover {
+  background-color: #83ebc5;
+  color:#ff7878;
+}

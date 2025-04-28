@@ -1,0 +1,168 @@
+body{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-family:arial;
+  font-size:20px;
+  color:rgb(107, 105, 105);
+}
+
+input, .reg-btn{
+  font-family:arial;
+  border-radius: 5px;
+}
+.box-1{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin-top:0px;
+  margin-right:100px;
+  gap:150px;
+  
+}
+.box-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width:40vh;
+  border-radius:5px;
+  gap:-1x;
+  padding:10px 20px;
+  margin-top:2px;
+
+}
+
+input{
+  padding: 10px 10px;
+  width:90%;
+  margin: 2px;
+  margin-bottom:7px;
+  border: 1px;
+  box-shadow: 0 0 2px #e9e9e9;
+  font-size: 16px;
+}
+
+input:focus{
+  outline:none;
+  border:1px solid grey;
+  color:#2c2b2b;
+}
+
+.logo{
+  margin-top:5px;
+  width:150px;
+  height:150px;
+}
+
+.app_login{
+  width:30px;
+  height:30px;
+}
+
+.reg-btn{
+cursor:pointer;
+width:97%;
+padding: 10px 20px;
+color: #ff7878;
+font-size: 19px;
+font-weight: bold;
+background-color:#83ebc5;
+  border: none;
+  margin-top:5px;
+}
+.reg-btn:hover{
+  background-color:rgb(255, 255, 255);
+  border:1px solid #ff7878;
+  color:#ff7878;
+  transition: 0.3s;
+  font-weight: bolder; 
+}
+
+.gmail-btn{
+  border:none;
+  padding:5px 5px;
+  margin-right:10px;
+  width:100px;
+  border-radius:3px;
+  cursor:pointer;
+  background-color:white;
+}
+  .gmail-btn:hover{
+    border:1px solid rgb(238, 243, 245);
+    transition: 0.3s;
+    box-shadow: 0 0 5px #d4d4d4;
+    font-weight: bolder; 
+    border-radius:10px;
+}
+.social_login{
+  display:flex;
+  flex-direction: coloumn;
+}
+
+.login_link:hover{
+  cursor:pointer;
+  color:#ff7878;
+  font-weight: bolder;
+}
+.line{
+  width:100%;
+  height:1px;
+  background-color: rgb(233, 236, 238);
+}
+h1{
+  margin: 0px 0px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+#passwordHelp, #emailHelp{
+  font-size:12px;
+  margin-left:10px;
+}
+.phelp, .eHelp{
+  display:flex;
+  flex-direction:row;
+  justify-content:left;
+  align-items:center;
+}
+.popup{
+  display:flex;
+  margin:0 0 0 0;
+  justify-content: center;
+  align-items: center;
+  color:#2c2b2b;
+  width:100%;
+  height:100%;
+  position:fixed;
+}
+.popup-content{
+  display:flex;
+  justify-content: center;
+  align-items:center; 
+  flex-direction:column;
+  padding:20px 20px;
+  background-color:#ff7878;
+  border-radius:4px;
+  width:250px;
+}
+.popup button{
+  background-color:#83ebc5;
+  color:#ff7878;
+  border:none;
+  padding:5px 10px;
+  border-radius:5px;
+  cursor:pointer;
+  font-weight:bold;
+
+}
+.hidden{
+  display:none;
+}
+.signupImg{
+  margin-top:0px;
+  display:flex;
+  flex-direction:row;
+}
+.team_member{
+margin-top:0px;
+}

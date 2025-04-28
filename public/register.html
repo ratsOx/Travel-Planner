@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="css/registerr.css" />
+
+  <!-- Firebase CDN (Compat SDKs) -->
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  
+  <div class="box-1">
+    <div class="signupImg">
+      <img src="images/undraw_traveling_c18z.svg" class="team_member">
+    </div>
+    <div class="box-2">
+      <img src="images/scooter-svgrepo-com.svg" class="logo" />
+      <h1>Travel Planner</h1>
+      <form>
+      <input type="text" id="fName" placeholder="First Name" required>
+      <input type="text" id="lName" placeholder="Last Name" required>
+      <input type="email" id="rEmail" placeholder="Email" required>
+      <div class="eHelp">
+      <small id="emailHelp"></small>
+    </div>
+      <input type="password" id="rPassword" placeholder="Password" required>
+      <div class="phelp">
+      <small id="passwordHelp"></small>
+    </div>
+      <input type="password" id="rConfirmPassword" placeholder="Confirm Password" required>
+      <button type="submit" id="submitSignUp" class="reg-btn">Sign Up</button>
+    </form>
+      <div id="popupMessage" class="popup hidden">
+        <div class="popup-content">
+          <p id="popupText">This is a popup!</p>
+          <button onclick="closePopup()">OK</button>
+          <div id="resendSection" class="hidden">
+            <p>Didn't get the email? <button id="resendEmailBtn">Resend Verification Email</button></p>
+          </div>
+        </div>
+        
+      </div>
+      <h4 class="login_link" onclick="window.location.href='login.html'"><u>Already have an Account?</u></h4>
+      <hr class="line" />
+      <h4>&mdash;Or Login With Gmail&mdash;</h4>
+      <div class="social_login">
+        <button type="button" class="gmail-btn" onclick="googleLogin()">
+          <img src="images/google.png" class="app_login" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Your custom JS file -->
+  <script src="js/app.js"></script>
+</body>
+</html>

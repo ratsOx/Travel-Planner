@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+
+  <!-- Firebase CDN (Compat SDKs) -->
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Image Slider and Welcome Message -->
+
+  <div class="content2">
+    <div class="title2">Travel Smarter. Stress Less.</div>
+    <div class="name2">Everything you need for an unforgettable trip.</div>
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+        <img src="images/undraw_location-review_nzql.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/undraw_nature_yf30.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/undraw_moments_4a32.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/undraw_tourist-map_bczs.svg" alt="">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+    </div>
+
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+  </div>
+
+  <!-- Login Box -->
+  <div class="box">
+    <div class="box1">
+      <img src="images/scooter-svgrepo-com.svg" class="logo">
+      <h1>Travel Planner</h1>
+
+      <!-- Corrected to use email -->
+      <input type="email" id="sEmail" placeholder="Email">
+      <input type="password" id="sPassword" placeholder="Password">
+      <button id="submitLogin" class="login_btn">Login</button>
+  
+      <h3 class="hehe">&mdash;or&mdash;</h3>
+      <button class="create-acc" onclick="window.location.href='register.html'">Create an Account</button>
+      <button onclick="googleLogin()" class="gmail_btn">
+        <img src="images/google.png" class="gmail_logo">Login with Google
+      </button>
+    </div>
+  </div>
+  <div id="popupMessage" class="popup hidden">
+    <div class="popup-content">
+      <p id="popupText">This is a popup!</p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+  </div>
+  <!-- Script with Firebase config and logic -->
+  <script src="js/login.js"></script>
+</body>
+</html>

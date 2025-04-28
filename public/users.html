@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users</title>
+  <link rel="stylesheet" href="css/userss.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+</head>
+
+<body>
+
+  <div class="top_bar">
+    <button id="scooter" class="nav_label" onclick="window.location.href='admin.html'"><img src="images/scooter-svgrepo-com.svg" alt=""></button>
+    <button id="dashboardBtn" class="nav_label"><img src="images/dashboard.png" alt="">Dashboard</button>
+    <button id="settingsBtn" class="nav_label"><img src="images/settings.png" alt="">Settings</button>
+    <button id="logoutBtn" class="nav_label"><img src="images/logout.png" alt="">Logout</button>
+  </div>
+
+  <div class="user_info">
+    <label>First Name</label>
+    <label>Last Name</label>
+    <label>Email</label>
+    <label>Status</label>
+    <label>Actions</label>
+  </div>
+
+  <div class="users">
+    <!-- Users will be inserted here by JS -->
+  </div>
+  <script src="js/users.js"></script>
+</body>
+</html>
